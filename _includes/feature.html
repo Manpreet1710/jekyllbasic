@@ -1,0 +1,22 @@
+<div class="container-fluid p-5 text-center bg-info text-white" style="height: 50vh;">
+    <h1>
+        {{site.data.data.sample.H1}}
+    </h1>
+    <h2>
+        {{site.data.data.sample.H2}}
+    </h2>
+    <div class="row">
+        <h5>
+            feature Highlights--
+        </h5>
+        {%- for item in site.data.data.sample.TEXTUAL_CONTENT -%}
+        <div class="col-md-6">
+            <p>
+                {{item.header}}
+            </p>
+        </div>
+        {%- endfor -%}
+    </div>
+</div>
+
+<!-- data driven by data folder -->
